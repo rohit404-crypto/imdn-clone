@@ -1,0 +1,171 @@
+.header {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex: 1;
+    margin-left: 10vw;
+  }
+  
+  .logo {
+    height: 8vh;
+  }
+  
+  .logo img {
+    height: 100%;
+    width: auto;
+  }
+  
+  .menu {
+    margin-right: 2vw;
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu span {
+    margin-left: 0.5vw;
+    color: white;
+  }
+  
+  .searchbar-container {
+    margin-right: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35vw;
+    border-radius: 5px;
+  }
+  
+  .searchbar-container input {
+    height: 4vh;
+    flex: 1;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    outline: none;
+    padding-left: 1em;
+  }
+  
+  .searchbar-container input:focus {
+    border: none;
+  }
+  
+  .searchbar-container button {
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4.35vh;
+    width: 4vw;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    background-color: white;
+    color: #757575;
+    cursor: pointer;
+  }
+  
+  .pro-logo {
+    height: 1.4em;
+    padding: 0 1vw;
+  }
+  
+  .pro-logo img {
+    height: 100%;
+    width: auto;
+  }
+  
+  .line {
+    width: 1px;
+    height: 4vh;
+    background-color: #4b2e2e;
+    margin: 0 1.5vw;
+  }
+  
+  .watchlist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 3vw;
+  }
+  
+  .watchlist span {
+    margin-left: 0.5vw;
+    color: white;
+  }
+  .login{
+      display:none !important;
+     }
+  /* ... (previous styles) */
+
+/* Media Query for screens smaller than 550px */
+@media (max-width:1085px){
+    .navbar{
+        margin-left: 4vw;
+    } 
+    .login{
+      display: flex !important;
+  }
+  span.signin {
+    display: none
+  }
+    
+}
+@media (max-width: 945px) {
+    .navbar{
+        margin-left: 0vw;
+    }
+    
+}
+@media (max-width:930px){
+    .pro-logo{
+        display:none;
+    }
+    .watchlist{
+      display: none;
+  }
+  .menu span{
+      display: none;
+  }
+  .logo{
+      margin-right: 0vw;
+      height: 5vh;
+  }
+  .menu{
+      margin-left: 0vw;
+  }
+  .searchbar-container{
+      width: 70vw;
+  }
+  .navbar{
+      margin-left: 2vw;
+  }
+ 
+ 
+  .line{
+      display: none;
+  }
+  .searchbar-container button{
+      width: 10vw;
+      height: 4.2vh;
+  }
+  
+}
+
+@media (max-width: 450px) {
+  .navbar{
+      margin-left: 0vw;
+  }
+    
+}
+

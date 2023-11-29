@@ -1,0 +1,30 @@
+.banner-container{
+ width: 60%;
+ margin-left: 10vw;
+ margin-top: 20;
+}
+.upnext-container{
+    width: 25%;
+    height: 100%;
+    margin-left: 2%;
+    margin-top: 10
+}
+
+ @media(max-width:1290px){
+  .banner-container{
+    width: 70%;
+    margin-left: 5vw;
+  }
+  .upnext-container{
+    width: 20%;
+  }
+} 
+@media(max-width:1085px){
+    .upnext-container{
+        display: none;
+    }
+    .banner-container{
+        width: 80%;
+        margin-left: 0vw;
+    }
+}
