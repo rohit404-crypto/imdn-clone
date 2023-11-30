@@ -6,7 +6,7 @@ import { Button } from '@mui/material';
 import BookmarkAddIcon from '@mui/icons-material/BookmarkAdd';
 import ChevronRightRoundedIcon from '@mui/icons-material/ChevronRightRounded';
 import { categoryMovies } from '../services/api'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 const Slide = ({ title, category_url }) => {
  const [moviesList, setMoviesList] = useState([])
  const navigate = useNavigate();
@@ -31,10 +31,13 @@ const Slide = ({ title, category_url }) => {
       items: 1,
     },
   };
+  const category = title === "Popular" ? "popular" : title === "Top Rated" ? "top_rated" : title === "Upcoming" ? "upcoming" : "now_playing" 
 
   return (
     <div style={{ width: '80%', marginLeft: 'auto', marginRight: 'auto', marginTop: 20 }}>
+      <Link to={`/category/${category}`} style={{ textDecoration: 'none' }}>
       <p style={{ color: '#F5C518', fontSize: 30, fontWeight: 'bold' , margin: '10px 0' }}>{title}<ChevronRightRoundedIcon sx={{verticalAlign:'middle' , fontSize:40 }} /></p>
+      </Link>
       <Carousel
         responsive={responsive}
         infinite={true}
