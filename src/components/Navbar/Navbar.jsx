@@ -33,6 +33,10 @@ const Navbar = ({ handleSearch }) => {
   };
 
   const handleSearchClick = () => {
+    if(searchQuery.length <= 0) {
+      alert('Please enter a valid search query');
+      return;
+    }
     handleSearch(searchQuery);
   };
 

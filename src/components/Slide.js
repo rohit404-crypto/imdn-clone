@@ -70,9 +70,9 @@ const Slide = ({ title, category_url }) => {
                 {movie.vote_average.toFixed(1)}
               </p>
               <p style={{ margin: 0, fontWeight: 'bold', fontSize: '14px', paddingRight: '7px' }}>{movie.original_title}</p>
-              <Button variant="contained" sx={{ backgroundColor: '#30353C', color: '#F5C518', fontWeight: 'bold', marginTop: '8px' }}>
+              {/* <Button variant="contained" sx={{ backgroundColor: '#30353C', color: '#F5C518', fontWeight: 'bold', marginTop: '8px' }}>
                 Watch Options
-              </Button>
+              </Button> */}
             </div>
           </div>
         ))}
