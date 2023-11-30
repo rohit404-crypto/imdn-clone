@@ -32,12 +32,15 @@ const Navbar = ({ handleSearch }) => {
     }
   };
 
-  const handleSearchClick = () => {
-    if(searchQuery.length <= 0) {
+  const handleSearchClick = (e) => {
+    if(searchQuery.trim() === '') {
+      e.preventDefault()
       alert('Please enter a valid search query');
       return;
+    }else{
+      handleSearch(searchQuery);
     }
-    handleSearch(searchQuery);
+   
   };
 
   return (
